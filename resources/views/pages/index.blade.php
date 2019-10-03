@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{config('app.name','MPISA')}}</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        
-    </head>
-    <body>
-        <h1>Welcome to MPI</h1>
-        <p>This is MPI Media Sosial Platform </p>
-    </body>
-</html>
+<div class="jumbotron text-center">
+<h1>{{ $title }}</h1>
+<a class="btn btn-lg btn-primary" href="/login" role="button">LOGIN</a>
+<a class="btn btn-lg btn-success" href="/register" role="button">REGISTER</a>
+      </div>
+@endsection
