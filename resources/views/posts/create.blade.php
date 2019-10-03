@@ -3,7 +3,7 @@
 @section('content')
     <h1>Create Post</h1>
 
-    {{Form::open(['action'=>'PostsController@store','method'=>'POST','encrype'=>'multipart/form-data'])}}
+    {{Form::open(['action'=>'PostsController@store','method'=>'POST','enctype'=>'multipart/form-data'])}}
 
     <div class="form-group">
         {{Form::label('title','Title')}}
